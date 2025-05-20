@@ -12,7 +12,8 @@
 </head>
 
 <body class="bg-light">
-    <div id="error-mesage" style="color: red; display: none;"></div>
+<div id="error-message" style="color: red; display: none;"></div>
+
     <div class="container py-4">
         <h1 class="text-center mb-4">📦 Dashboard de Productos</h1>
 
@@ -24,8 +25,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <input type="text" id="product-name" class="form-control" placeholder="Nombre del producto"
-                        required>
+                    <input type="text" id="product-name" class="form-control" placeholder="Nombre del producto" required>
                 </div>
 
                 <div class="col-md-4">
@@ -38,32 +38,28 @@
                 </div>
             </div>
         </form>
-        <!-- buscador por id  -->
-        <div class="input-group mb-4">
-            <input type="number" id="search-id" class="form-control" placeholder="Buscar por ID">
-            <button id="serch-btn" class="btn btn-primary ">Buscar</button>
-        </div>
+        
 
-        <!-- Tabla de productos -->
+        <!-- Buscar por ID-->
+         <div class="input-group mb-4">
+            <input type="number" id="search-id" class="form-control" placeholder="Buscar producto por ID">
+            <button id="search-btn" class="btn btn-primary"> Buscar</button>
+         </div>
 
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-              <thead class="table-dark">
+         <!-- Tabla de productos -->
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
                 <tr>
-                <th>id</th>
+                <th>ID</th>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody id="product-table">
-                <!-- Aquí se llenarán los productos -->
-
-            </tbody>
+            <tbody id="product-table"></tbody>
             </table>
-        </div>
-
-
+          </div>
     </div>
     <script type="module" src="app.js"></script>
 </body>
